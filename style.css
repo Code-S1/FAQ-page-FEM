@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Playwrite+IN:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+
+.backimg {
+    object-fit: cover;
+    width: 100vw;
+    height: 100%;
+    
+}
+
+.mob {
+    display: none;
+}
+
+.container {
+    width: 80vw;
+    border: 1px solid black;
+    margin: -7em auto 0 auto;
+    z-index: 1;
+    position: relative;
+    max-width: 500px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+
+.faq {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    font-size: 60px;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+
+}
+
+.faq p {
+    margin-left: 15px;
+
+}
+
+.help {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 32px;
+    font-size: 17px;
+}
+
+.discription {
+    color: hsl(292, 16%, 49%);
+    margin-top: 23px;
+    font-weight: 500;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+
+}
+
+.child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 18px 0 0px 0;
+    border-top: 1px solid hsl(275, 100%, 97%);
+    font-weight: 600;
+}
+svg{
+    min-width: 30px;
+}
+
+.child:hover {
+    color: hsl(292, 88%, 55%);
+    transition: 100ms;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .backimg {
+        display: none;
+    }
+
+    .mob {
+        display: unset;
+        object-fit: fill;
+        width: 100%;
+       height: auto;
+    }
+
+    .container {
+        margin: -7em auto 0 auto;
+        padding: 15px;
+    }
+
+    .minus {
+        flex-shrink: 0;
+        margin-left: 30px;
+    }
+
+    .faq {
+        font-size: 40px;
+    }
+
+    .help p {
+        width: 80%;
+    }
+
+}
